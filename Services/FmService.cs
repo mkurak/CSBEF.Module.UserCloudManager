@@ -2577,7 +2577,10 @@ namespace CSBEF.Module.UserCloudManager.Services
                         rtn.Result.Add((GetShareFileItem(item.Id, item.UserId, args.Param)).Result);
                     }
 
-                    cloneResult = rtn.Result;
+                    cloneResult = new List<FmShareFileModel>();
+                    if (rtn.Result.Any())
+                        foreach (var item in rtn.Result)
+                            cloneResult.Add(item);
 
                     if (cloneResult.Any())
                     {
@@ -2586,12 +2589,10 @@ namespace CSBEF.Module.UserCloudManager.Services
                             FmFile getSharedFileData = _fmFileRepository.Find(i => i.Id == file.FileId);
                             if (!getSharedFileData.Status || getSharedFileData.UserId == args.Param)
                             {
-                                cloneResult.Remove(file);
+                                rtn.Result.Remove(file);
                             }
                         }
                     }
-
-                    rtn.Result = cloneResult;
                 }
 
                 #endregion Action Body
