@@ -4,10 +4,10 @@
 User file space module developed for CSBEF. With this module users can manage their own file space and you can share with other users.
 
 # Current Version
-Version: 1.1.3 ([latest release](https://github.com/mkurak/CSBEF.Module.UserCloudManager/releases/tag/1.1.3))
+Version: 1.1.4 ([latest release](https://github.com/mkurak/CSBEF.Module.UserCloudManager/releases/tag/1.1.4))
 
 # Version Info
-- Fixed an issue that caused an error when creating the shared folder and files list.
+- Updated CSBEF.Module.UserManagement (3.1.5)
 
 # Nuget
 [CSBEF.Module.UserCloudManager](https://www.nuget.org/packages/CSBEF.Module.UserCloudManager/)
