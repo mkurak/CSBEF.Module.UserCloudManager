@@ -14,14 +14,14 @@
     <PackageProjectUrl>https://github.com/mkurak/CSBEF.Module.UserCloudManager</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mkurak/CSBEF.Module.UserCloudManager</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <PackageReleaseNotes>- Updated CSBEF.Core 3.1.6
-- Updated CSBEF.Module.UserManagement 3.1.8</PackageReleaseNotes>
-    <Version>1.1.7</Version>
+    <PackageReleaseNotes>- Updated CSBEF.Core 3.1.7
+- Updated CSBEF.Module.UserManagement 3.1.9</PackageReleaseNotes>
+    <Version>1.1.8</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CSBEF.Core" Version="3.1.6" />
-    <PackageReference Include="CSBEF.Module.UserManagement" Version="3.1.8" />
+    <PackageReference Include="CSBEF.Core" Version="3.1.7" />
+    <PackageReference Include="CSBEF.Module.UserManagement" Version="3.1.9" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
